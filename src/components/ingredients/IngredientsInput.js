@@ -4,7 +4,8 @@ export class IngredientsInput extends Component {
   render(){
     return(
       <div>
-        Ingredients Input
+        <input type="text" name="name" />
+        <input type="text" name="calories" />
       </div>
     )
   }

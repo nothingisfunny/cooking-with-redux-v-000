@@ -1,5 +1,10 @@
 import uuidV4  from 'uuid/v4';
 
-export default function recipe(state = 'something', action){
-  return state;
+export function recipeReducer(state = [], action){
+  switch (action.type){
+    case 'ADD_RECIPE':
+      return Object.assign({}, state, {id: uuidV4()})
+    default:
+      return state;
+  }
 }
